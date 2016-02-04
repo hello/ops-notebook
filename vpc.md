@@ -37,11 +37,11 @@ Tentative transition plan as follows:
 
 - [ ] Enable HA NAT for `Priv1B` in `Pub1B`
 - [ ] Create prod bastion host
-- [ ] Migrate workers to run into `Priv1A` *and* `Priv1B`
-- [ ] Migrate firehose to run into `Priv1A` *or* `Priv1B`
-- [ ] Migrate admin to run into `Priv1A` *or* `Priv1B`
-- [ ] Migrate app to run into `Priv1A` *and* `Priv1B`
-- [ ] Migrate service to run into `Priv1A` *and* `Priv1B`
+- [ ] Migrate workers to run into `Priv1A` **and** `Priv1B`
+- [ ] Migrate firehose to run into `Priv1A` **or** `Priv1B`
+- [ ] Migrate admin to run into `Priv1A` **or** `Priv1B`
+- [ ] Migrate app to run into `Priv1A` **and** `Priv1B`
+- [ ] Migrate service to run into `Priv1A` **and** `Priv1B`
 - [ ] Retire `1A` and `1B` subnets.
 
 
