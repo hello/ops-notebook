@@ -50,13 +50,13 @@ Tentative transition plan as follows:
 Subnets name should identify their accessibility `Pub|Priv` and the AZ in which they are running `1A|1B|1X`.
 Current CIDR blocks are defined as follows:
 
-- `subnet-28c6565f` `1A` `10.0.0.0/24` 
-- `subnet-28c6565f` `1B` `10.0.1.0/24`
+- `10.0.0.0/24` `subnet-28c6565f` `1A` 
+- `10.0.1.0/24` `subnet-28c6565f` `1B`
 
-- `subnet-838a3bf5` `Pub1A`  `10.0.3.0/24`
-- `subnet-c68233b0` `Priv1A` `10.0.2.0/24`
-- `subnet-8abb70d2` `Pub1B`  `10.0.5.0/24`
-- `subnet-a4bb70fc` `Priv1B` `10.0.4.0/24`
+- `10.0.3.0/24` `subnet-838a3bf5` `Pub1A`  
+- `10.0.2.0/24` `subnet-c68233b0` `Priv1A` 
+- `10.0.5.0/24` `subnet-8abb70d2` `Pub1B`
+- `10.0.4.0/24` `subnet-a4bb70fc` `Priv1B`
 
 
 Odd CIDR for public subnets. Example: `10.0.3.X/X` and `10.0.5.X/X`
