@@ -15,8 +15,10 @@
 Currently only available for Sense data (pill checkpoint tracking coming soon)
 * Determine when the event occured (use papertrail, etc.)
 * Find checkpoint(s) for start of event(s) in the checkpoint tracking Dynamo table
-	* Remember, these events are in UTC
+  * Remember, these events are in UTC
 * Start a new worker instance for reprocessing.
+  * You can either spin up an instance manually from the AWS console (if you have IAM list roles privileges) and specify your own keypair at that time
+  * OR... You an use the `sanders create --emergency` command to create a new launch config which will generate a new keypair and allow you to use this new keypair to SSH into the instance. 
 * SSH into new instance and stop all workers.
 * Edit prod.yml config file for the worker and assign unique App name for the KCL to use. (e.g. SenseSaveConsumerProdReprocess)
 * Restart the worker you want to reprocess (e.g. sense-save)
