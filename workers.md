@@ -28,3 +28,4 @@ Currently only available for Sense data (pill checkpoint tracking coming soon)
 * Stop the worker again.
 * Modify checkpoint in the Dynamo table named the same as the App name you added to the config file above and replace with the value you found earlier. 
 * Restart worker. 
+* :warning: Delete tables
