@@ -6,3 +6,4 @@ Ops notebook.
 2. [Ansible](ansible.md)
 3. [Deployments](deployments.md)
 4. [Workers](workers.md)
+5. [AWS](aws.md)
