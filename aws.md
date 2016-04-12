@@ -2,7 +2,7 @@
 
 ###Useful AWS CLI Commands
 
-####Modify Retention Period
+####Modify Kinesis Retention Period
 * Describe the stream before making changes
  * `aws kinesis describe-stream --stream-name batch_pill_data`
 * Set a new value for retention period (in hours; 168hr max)
