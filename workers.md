@@ -23,7 +23,9 @@
  * `sudo service stop suripu-workers-<worker_name>` for each worker 
 * Edit the prod.yml config file for the worker and assign unique App name for the KCL to use. (e.g. SenseSaveConsumerProdReprocess)
 * Restart the worker you want to reprocess (e.g. sense-save)
-* Check DynamoDB for a checkpoint record being written. 
+* Check DynamoDB for a checkpoint record being written. Search for "stream_shardId" as follows:
+  * Sense-stream: `sense_sensors_data:shardId-000000000001` and `sense_sensors_data:shardId-000000000002`
+  * Pill-stream: `batch_pill_data:shardId-000000000000`
 * Stop the worker again.
 * Modify checkpoint in the Dynamo table named the same as the App name you added to the config file above and replace with the value you found earlier. 
 * Restart worker. 
