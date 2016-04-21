@@ -12,7 +12,6 @@
 #### Insights
 
 ## Reprocessing Kinesis Records
-Currently only available for Sense data (pill checkpoint tracking coming soon)
 * Determine when the event occured (use papertrail, etc.)
 * Find checkpoint(s) for start of event(s) in the checkpoint tracking Dynamo table
   * Remember, these events are in UTC
