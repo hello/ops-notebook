@@ -16,8 +16,8 @@
 * Find checkpoint(s) for start of event(s) in the checkpoint tracking Dynamo table
   * Remember, these events are in UTC
   * Search for "stream_shardId" as follows:
-    * Sense-stream: `sense_sensors_data:shardId-000000000001` and `sense_sensors_data:shardId-000000000002`
-    * Pill-stream: `batch_pill_data:shardId-000000000000`
+    * Sense: `sense_sensors_data:shardId-000000000001` and `sense_sensors_data:shardId-000000000002`
+    * Pill: `batch_pill_data:shardId-000000000000`
 * Start a new worker instance for reprocessing.
   * You can either spin up an instance manually from the AWS console (if you have IAM list roles privileges) and specify your own keypair at that time
   * OR... You can use the `sanders create --emergency` command to create a new launch config which will generate a new keypair and allow you to use this new keypair to SSH into the instance. 
