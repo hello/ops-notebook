@@ -24,7 +24,7 @@
 * SSH into new instance and stop all workers.
  * `initctl list |grep suripu` to list all suripu services currently available 
  * `sudo service stop suripu-workers-<worker_name>` for each worker 
-* Edit the /etc/hello/<prod>.yml config file for the worker and assign unique App name for the KCL to use. (e.g. SenseSaveConsumerProdReprocess)
+* Edit the `/etc/hello/<your-worker-prod-config>.yml` config file for the worker and assign unique App name for the KCL to use. (e.g. SenseSaveConsumerProdReprocess)
 * Restart the worker you want to reprocess (e.g. suripu-workers-sense)
 * Check DynamoDB for a checkpoint record being written.
 * Stop the worker again.
