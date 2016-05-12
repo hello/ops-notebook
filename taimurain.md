@@ -12,7 +12,7 @@ Repo: taimurain
 - sudo start taimurain
 
 
-**To Deploy**
+###To Deploy
 
 (remember to `sanders-update`)
 
@@ -23,16 +23,16 @@ Repo: taimurain
 5. use `sanders monitor` to check that the instances are attached to the ELB, this takes some time  taimurain's instances. 
 
 
-**Metrics**
+###Metrics
 - monitor ELB's stats: [Cloudwatch Taimurain Dashboard](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#dashboards:name=Taimurain-ELB)
 - monitor logs: [Papertrail Taimurain logs](https://papertrailapp.com/groups/1334064/events?q=program%3Ataimurain)
 
 
-**Alarms**
+###Alarms
 - none yet
 
 
-**Remaining todos**
+###Remaining todos
 - update suripu-app configs to use the prod ELB: 
   - `internal-taimurain-prod-1606459001.us-east-1.elb.amazonaws.com`
   - should probably deploy to canary first and check that it works
@@ -40,6 +40,6 @@ Repo: taimurain
 - test how failures/timeouts will affect suripu-app
 
 
-**Will it page?**
+###Will it page?
 
-Not directly. ;)
+Not yet. Not directly. ;)
