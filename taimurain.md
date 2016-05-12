@@ -31,8 +31,9 @@ Repo: taimurain
 
 
 **Remaining todos**
-- update suripu-app configs to use the prod ELB: `internal-taimurain-prod-1606459001.us-east-1.elb.amazonaws.com`
-(should probably deploy to canary first and check that it works)
+- update suripu-app configs to use the prod ELB: 
+  - `internal-taimurain-prod-1606459001.us-east-1.elb.amazonaws.com`
+  - should probably deploy to canary first and check that it works
 - load testing
 - test how failures/timeouts will affect suripu-app
 
