@@ -4,7 +4,7 @@ internal-elb: taimurain-prod
 
 ASGs: taimurain-prod and taimurain-prod-green (minimum of two instances)
 
-Repo: taimurain
+Repo: [taimurain](https://github.com/hello/taimurain)
 
 **What's happening on the instances**
 - sudo service nginx start
