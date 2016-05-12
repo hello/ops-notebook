@@ -14,6 +14,8 @@ Repo: taimurain
 
 **To Deploy**
 
+(remember to `sanders-update`)
+
 1. From taimurain-repo, run `./release.sh`. Travis will build the debian package with python code and configs, upload to S3.
 2. From `packer-templates` and run `taimurain/build_taimurain.sh` to build the AMI (git pulled?)
 3. Create launch configuration: `sanders create` 
